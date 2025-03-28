@@ -15,6 +15,7 @@ My wiping program
 2. Writes 10101010 to the entire drive
 3. Writes 01010101 to the entire drive
 These happen as many times as specified in the command line argument
+
 After specified itterations
 1. It writes all 1's to the entire drive
 2. It writes all 0's to the entire drive
