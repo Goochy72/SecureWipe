@@ -15,9 +15,10 @@ off_t get_drive_size(const char *drive_path) {
     struct stat st;
     if (stat(drive_path, &st) == 0) {
         return st.st_size / 1024;  // Convert bytes to KB
+    }else{
+        perror("Error getting drive size");
+        return -1;
     }
-    perror("Error getting drive size");
-    return -1;
 }
 
 // Function to print progress bar with ETA
